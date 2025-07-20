@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Flask (Docker)",
+            "type": "shell",
+            "command": "docker build -t homebikemanager . && docker run -p 5000:5000 homebikemanager",
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "Test Python App",
+            "type": "shell",
+            "command": ".venv/bin/pytest tests/",
+            "group": { "kind": "test", "isDefault": true },
+            "problemMatcher": []
+        }
+
+    ]
+}
