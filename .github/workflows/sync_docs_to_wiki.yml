@@ -42,7 +42,7 @@ jobs:
       - name: Clone Wiki repository
         # Clones the GitHub Wiki repository using a token with write access
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use WIKI_PUSH_TOKEN if PAT is required
+          GH_TOKEN: ${{ secrets.WIKI_PUSH_TOKEN }}
         run: |
           git clone https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.wiki.git wiki
 
