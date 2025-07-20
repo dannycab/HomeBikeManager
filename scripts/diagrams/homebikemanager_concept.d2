@@ -1,0 +1,95 @@
+// HomeBikeManager Concept Diagram (D2)
+// Color palette: WCAG-compliant
+
+
+User: {
+  label: "User"
+  shape: person
+  style: {
+    fill: "#f9f871"
+    stroke: "#22223b"
+  }
+}
+
+API: {
+  label: "Flask REST API"
+  shape: rectangle
+  style: {
+    fill: "#4f8cff"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+DB: {
+  label: "Database (SQLite/Postgres)"
+  shape: cylinder
+  style: {
+    fill: "#2d6a4f"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+Storage: {
+  label: "Uploads (GPX/KML)"
+  shape: rectangle
+  style: {
+    fill: "#f9844a"
+    stroke: "#22223b"
+  }
+}
+
+Calendar: {
+  label: "Calendar/Events"
+  shape: rectangle
+  style: {
+    fill: "#b5179e"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+Rides: {
+  label: "Rides"
+  shape: rectangle
+  style: {
+    fill: "#43aa8b"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+Parts: {
+  label: "Parts"
+  shape: rectangle
+  style: {
+    fill: "#f3722c"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+Bikes: {
+  label: "Bikes"
+  shape: rectangle
+  style: {
+    fill: "#577590"
+    stroke: "#22223b"
+    font-color: "#ffffff"
+  }
+}
+
+User -> API: "Uses"
+API -> DB: "Reads/Writes"
+API -> Storage: "Saves/Loads Files"
+API -> Calendar: "Manages"
+API -> Rides: "Manages"
+API -> Parts: "Manages"
+API -> Bikes: "Manages"
+Rides -> Storage: "Links Files"
+Calendar -> Bikes: "Schedules"
+Calendar -> Parts: "Schedules"
+Calendar -> Rides: "Schedules"
+Parts -> Bikes: "Belongs to"
+Rides -> Bikes: "Uses"

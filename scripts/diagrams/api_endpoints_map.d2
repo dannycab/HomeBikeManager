@@ -1,0 +1,70 @@
+// API Endpoints Map (D2)
+// WCAG-compliant colors and v0.7.0 style
+
+
+API: {
+  label: "Flask REST API"
+  shape: rectangle
+  style: {
+    fill: "#4f8cff",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Auth: {
+  label: "/api/register\n/api/login"
+  shape: rectangle
+  style: {
+    fill: "#b5179e",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Bikes: {
+  label: "/api/bikes\n/api/bikes/<id>"
+  shape: rectangle
+  style: {
+    fill: "#577590",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Parts: {
+  label: "/api/parts\n/api/parts/<id>"
+  shape: rectangle
+  style: {
+    fill: "#f3722c",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Rides: {
+  label: "/api/rides\n/api/rides/upload"
+  shape: rectangle
+  style: {
+    fill: "#43aa8b",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+
+Calendar: {
+  label: "/api/calendar"
+  shape: rectangle
+  style: {
+    fill: "#f9f871",
+    stroke: "#22223b"
+  }
+}
+
+API -> Auth: "Handles auth"
+API -> Bikes: "Manages"
+API -> Parts: "Manages"
+API -> Rides: "Manages"
+API -> Calendar: "Manages"
+Rides -> API: "File Uploads"

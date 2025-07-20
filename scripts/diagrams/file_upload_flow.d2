@@ -1,0 +1,55 @@
+// File Upload Workflow (D2)
+// WCAG-compliant colors and v0.7.0 style
+
+
+User: {
+  label: "User"
+  shape: person
+  style: {
+    fill: "#f9f871",
+    stroke: "#22223b"
+  }
+}
+
+API: {
+  label: "API /api/rides/upload"
+  shape: rectangle
+  style: {
+    fill: "#4f8cff",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Validation: {
+  label: "Validate file type & size"
+  shape: rectangle
+  style: {
+    fill: "#f9844a",
+    stroke: "#22223b"
+  }
+}
+
+Storage: {
+  label: "Store file (uploads/)"
+  shape: rectangle
+  style: {
+    fill: "#f9844a",
+    stroke: "#22223b"
+  }
+}
+
+Ride: {
+  label: "Ride record"
+  shape: rectangle
+  style: {
+    fill: "#43aa8b",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+User -> API: "Uploads GPX/KML"
+API -> Validation: "Checks"
+Validation -> Storage: "If valid"
+Storage -> Ride: "Link file"

@@ -3,14 +3,33 @@
 
 Welcome to HomeBikeManager! This is a humble, work-in-progress Flask REST API for managing your bikes, parts, rides, and maintenance schedules. It's not going to win any design awards, but it gets the job done (eventually). 😅
 
+## System Overview
+![HomeBikeManager Concept Diagram](docs/diagrams/homebikemanager_concept.svg)
+
+*Figure: High-level concept diagram of the HomeBikeManager system, showing users, API, database, uploads, and main entities.*
+
 ## Features (Such As They Are)
-- 🛠️ Manage bikes and their parts (because you keep forgetting which chain fits which bike)
-- 🗺️ Track rides, upload GPX/KML files (coming soon, we promise)
-- 📅 Calendar for rides and maintenance (so you can ignore your own reminders)
-- 🐳 Dockerized for easy deployment (or just run it locally, we won't judge)
-- 🔑 API key authentication (security through obscurity?)
-- 🧪 Automated tests (pytest, because we like green dots)
-- 📝 Logging (so you can see all your mistakes in real time)
+
+## Documentation Tree
+All documentation is in the `docs/` folder and is suitable for the GitHub Wiki. See also the [Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
+
+```
+docs/
+  Home.md           # Wiki landing page
+  setup.md          # Setup & Installation
+  api.md            # API Reference
+  uploads.md        # File Uploads
+  auth.md           # Authentication
+  docker.md         # Docker & Deployment
+  testing.md        # Testing
+  logging.md        # Logging & Debugging
+  contributing.md   # Contributing
+  faq.md            # FAQ
+  scripts.md        # Automation Scripts
+```
+
+## Automation Scripts
+See [docs/scripts.md](docs/scripts.md) for helper scripts, including `scripts/sync_docs_to_wiki.py` to copy docs/ to the wiki repo.
 
 ## Quick Start
 
@@ -54,6 +73,16 @@ Welcome to HomeBikeManager! This is a humble, work-in-progress Flask REST API fo
 - Rides and file uploads (GPX/KML)
 - Calendar events
 - Anything fancy
+
+## Development Timeline
+- **2025-07**: Project scaffolded, Flask app and models created, Docker and requirements set up.
+- **2025-07**: User registration, login, and API key authentication implemented.
+- **2025-07**: CRUD endpoints for bikes and parts added, with automated pytest-based tests.
+- **2025-07**: Logging and error handling added.
+- **2025-07**: .gitignore, documentation, and VS Code tasks improved.
+- **2025-07**: GitHub issues filed for all major features and improvements.
+- **2025-07**: docs/ folder created with actionable, status-aware documentation for all major features.
+- **2025-07**: Automation script added to sync docs/ to the GitHub Wiki.
 
 ## Contributing
 Pull requests welcome! Just don't expect us to merge them quickly. 😬

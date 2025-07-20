@@ -1,0 +1,67 @@
+// Deployment Architecture (D2)
+// WCAG-compliant colors and v0.7.0 style
+
+
+User: {
+  label: "User"
+  shape: person
+  style: {
+    fill: "#f9f871",
+    stroke: "#22223b"
+  }
+}
+
+Browser: {
+  label: "Browser/Client"
+  shape: rectangle
+  style: {
+    fill: "#b5179e",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Docker: {
+  label: "Docker Container"
+  shape: rectangle
+  style: {
+    fill: "#4f8cff",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+App: {
+  label: "Flask App"
+  shape: rectangle
+  style: {
+    fill: "#4f8cff",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+DB: {
+  label: "Database Volume"
+  shape: cylinder
+  style: {
+    fill: "#2d6a4f",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Uploads: {
+  label: "Uploads Volume"
+  shape: rectangle
+  style: {
+    fill: "#f9844a",
+    stroke: "#22223b"
+  }
+}
+
+User -> Browser: "Uses"
+Browser -> Docker: "Sends requests"
+Docker -> App: "Runs"
+App -> DB: "Reads/Writes"
+App -> Uploads: "Saves files"

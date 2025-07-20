@@ -2,6 +2,11 @@
 
 Welcome to the HomeBikeManager documentation. This guide covers everything you need to develop, deploy, and use the HomeBikeManager Flask REST API.
 
+## System Overview
+![HomeBikeManager Concept Diagram](diagrams/homebikemanager_concept.svg)
+
+*Figure: High-level concept diagram of the HomeBikeManager system, showing users, API, database, uploads, and main entities.*
+
 ## Project Status (as of July 2025)
 - User registration, login, and API key authentication are implemented and tested.
 - Bike and part endpoints are implemented and tested.

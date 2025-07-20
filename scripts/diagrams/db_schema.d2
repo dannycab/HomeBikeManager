@@ -1,0 +1,62 @@
+// Database Schema Diagram (D2)
+// WCAG-compliant colors and v0.7.0 style
+
+
+User: {
+  label: "User"
+  shape: rectangle
+  style: {
+    fill: "#f9f871",
+    stroke: "#22223b"
+  }
+}
+
+Bike: {
+  label: "Bike"
+  shape: rectangle
+  style: {
+    fill: "#577590",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Part: {
+  label: "Part"
+  shape: rectangle
+  style: {
+    fill: "#f3722c",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+Ride: {
+  label: "Ride"
+  shape: rectangle
+  style: {
+    fill: "#43aa8b",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+CalendarEvent: {
+  label: "CalendarEvent"
+  shape: rectangle
+  style: {
+    fill: "#b5179e",
+    stroke: "#22223b",
+    font-color: "#ffffff"
+  }
+}
+
+User -> Bike: "Owns"
+Bike -> Part: "Has"
+Bike -> Ride: "Has"
+User -> CalendarEvent: "Creates"
+Bike -> CalendarEvent: "Related"
+Part -> CalendarEvent: "Related"
+Ride -> CalendarEvent: "Related"
+Ride -> Bike: "Uses"
+Part -> Bike: "Belongs to"
