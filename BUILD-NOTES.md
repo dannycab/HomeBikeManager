@@ -25,6 +25,11 @@
 - .gitignore filled out for Python, macOS, Windows, and Linux development.
 - All development artifacts, OS files, and virtual environments excluded from version control.
 
+
+**2025-07-20 (cont.)**
+- Added `scripts/sync_docs_to_wiki.py` to automate copying Markdown docs to the Wiki and running `git add .`, `git commit`, and `git push` for seamless documentation updates.
+- Removed custom CSS from MkDocs configuration to resolve build and compatibility issues with the Material theme.
+
 **Known Gaps / Next Steps**
 - Rides, file upload, and calendar endpoints to be implemented.
 - Docker volume for database persistence (optional for production).
