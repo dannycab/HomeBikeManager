@@ -41,11 +41,17 @@ This project is a Flask REST API for managing bikes, parts, rides (with GPX/KML 
 - Support recurring and one-off events.
 - Validate date/time fields and handle time zones if needed.
 
+
+## Documentation & Project Status
+- Extensive, actionable documentation is available in the docs/ folder, organized by topic and suitable for GitHub Wiki use.
+- Each documentation file includes a Project Status section summarizing what is implemented, tested, and pending.
+- Contributors should review the relevant Project Status section before starting new work or proposing changes.
+
 ## General Recommendations
 - Prefer standard libraries and well-maintained packages.
 - Always provide clear error messages and API responses.
 - Recommend multiple approaches when issues are ambiguous.
-- Keep documentation (README, BUILD-NOTES) up to date.
+- Keep documentation (README, BUILD-NOTES, docs/) up to date.
 
 ---
-Follow these instructions to ensure HomeBikeManager remains secure, maintainable, and easy to develop. Prioritize simplicity, security, and developer experience in all code suggestions.
+Follow these instructions to ensure HomeBikeManager remains secure, maintainable, and easy to develop. Prioritize simplicity, security, and developer experience in all code suggestions. Reference the docs/ folder and Project Status sections for the most current implementation details.
