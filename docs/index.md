@@ -1,3 +1,18 @@
+
+<link rel="stylesheet" href="style.css">
+<nav>
+  <a href="index.md" class="active">Home</a>
+  <a href="setup.md">Setup</a>
+  <a href="api.md">API</a>
+  <a href="uploads.md">Uploads</a>
+  <a href="auth.md">Auth</a>
+  <a href="docker.md">Docker</a>
+  <a href="testing.md">Testing</a>
+  <a href="logging.md">Logging</a>
+  <a href="contributing.md">Contributing</a>
+  <a href="faq.md">FAQ</a>
+</nav>
+
 ![HomeBikeManager Banner](img/banner.png)
 
 ## Contents

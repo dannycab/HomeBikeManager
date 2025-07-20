@@ -1,0 +1,65 @@
+/* docs/style.css - Forest Dark Theme for HomeBikeManager Docs */
+:root {
+  --bg: #181f1a;
+  --fg: #e0e5d8;
+  --accent: #4caf50;
+  --nav-bg: #232b23;
+  --nav-fg: #e0e5d8;
+  --nav-active: #81c784;
+  --link: #81c784;
+  --border: #2e3c2f;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+nav a {
+  color: var(--link);
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a.active, nav a:hover {
+  background: var(--nav-active);
+  color: var(--bg);
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em;
+  background: rgba(24,31,26,0.98);
+  border-radius: 10px;
+  box-shadow: 0 2px 16px #0006;
+}
+h1, h2, h3, h4 {
+  color: var(--accent);
+}
+img, svg {
+  max-width: 100%;
+  border-radius: 6px;
+  background: #232b23;
+  box-shadow: 0 1px 6px #0004;
+}
+code, pre {
+  background: #232b23;
+  color: #b9f6ca;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+@media (max-width: 600px) {
+  main { padding: 1em; }
+  nav { flex-wrap: wrap; }
+}
