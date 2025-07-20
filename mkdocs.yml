@@ -1,0 +1,19 @@
+site_name: HomeBikeManager Docs
+nav:
+  - Home: index.md
+  - Setup & Installation: setup.md
+  - API Reference: api.md
+  - File Uploads: uploads.md
+  - Authentication: auth.md
+  - Docker & Deployment: docker.md
+  - Testing: testing.md
+  - Logging & Debugging: logging.md
+  - Contributing: contributing.md
+  - FAQ: faq.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: green
+    accent: light green
+docs_dir: docs

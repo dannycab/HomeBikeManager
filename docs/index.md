@@ -1,20 +1,5 @@
 
-<link rel="stylesheet" href="style.css">
-<nav aria-label="Main navigation">
-  <ul>
-    <li><a href="index.md" aria-current="page">Home</a></li>
-    <li><a href="setup.md">Setup</a></li>
-    <li><a href="api.md">API</a></li>
-    <li><a href="uploads.md">Uploads</a></li>
-    <li><a href="auth.md">Auth</a></li>
-    <li><a href="docker.md">Docker</a></li>
-    <li><a href="testing.md">Testing</a></li>
-    <li><a href="logging.md">Logging</a></li>
-    <li><a href="contributing.md">Contributing</a></li>
-    <li><a href="faq.md">FAQ</a></li>
-  </ul>
-</nav>
-<main>
+
 
 
 ![HomeBikeManager Banner](img/banner.png)

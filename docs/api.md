@@ -1,3 +1,4 @@
+# This file does not contain any <link> or <nav> elements to remove.
 # API Reference
 
 This section documents the main REST API endpoints for HomeBikeManager.

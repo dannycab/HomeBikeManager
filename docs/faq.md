@@ -1,3 +1,4 @@
+<!-- Removed manual nav HTML and <link rel="stylesheet"> for MkDocs compatibility -->
 # FAQ
 
 **Q: How do I reset my API key?**

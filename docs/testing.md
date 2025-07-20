@@ -1,5 +1,9 @@
 # Testing
 
+# HomeBikeManager uses pytest for automated testing.
+
+# Testing
+
 HomeBikeManager uses pytest for automated testing.
 
 ## Project Status
