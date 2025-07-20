@@ -60,5 +60,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Sync docs/ to wiki [automated]"
-            git push
+            # Ensure remote is set to the wiki repo before pushing
+            git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.wiki.git
+            git push origin HEAD:master
           fi
