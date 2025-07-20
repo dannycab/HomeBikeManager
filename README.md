@@ -6,7 +6,7 @@
 [![Pull Requests](https://img.shields.io/github/issues-pr/dannycab/HomeBikeManager?style=flat-square)](https://github.com/dannycab/HomeBikeManager/pulls)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-> 📖 **Full documentation:** See the [`docs/`](docs/) folder and the [GitHub Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
+> 📖 **Full documentation:** Visit the [Live Docs Website](https://dannycab.github.io/HomeBikeManager/) or see the [GitHub Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
 
 Welcome to HomeBikeManager! This is a humble, work-in-progress Flask REST API for managing your bikes, parts, rides, and maintenance schedules. It's not going to win any design awards, but it gets the job done (eventually). 😅
 
@@ -45,7 +45,8 @@ Welcome to HomeBikeManager! This is a humble, work-in-progress Flask REST API fo
 ## Features (Such As They Are)
 
 ## Documentation Tree
-All documentation is in the `docs/` folder and is suitable for the GitHub Wiki. See also the [Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
+
+All documentation is available on the [Live Docs Website](https://dannycab.github.io/HomeBikeManager/) (built with MkDocs Material) and is also suitable for the [Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
 
 ```
 docs/

@@ -2,7 +2,16 @@
 
 We welcome contributions to HomeBikeManager!
 
-## Project Status
+
+## Project Status (July 2025)
+
+| Feature                        | Status      | Notes                                             |
+|--------------------------------|-------------|---------------------------------------------------|
+| Code style guidelines          | Built       | Present and enforced                              |
+| Docstrings/comments            | Improving   | Being improved                                    |
+| Refactoring (business logic)   | Recommended | Move logic out of route handlers                  |
+
+**Summary:**
 - Code style and contribution guidelines are present.
 - Docstrings and inline comments are being improved.
 - Refactoring to move business logic out of route handlers is recommended.

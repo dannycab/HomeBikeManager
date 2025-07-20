@@ -7,7 +7,16 @@ HomeBikeManager uses username/password authentication and API keys.
 
 *Figure: This diagram details the authentication process, from user registration and login to API key issuance and request validation. It clarifies the security model and the steps required for secure access to the API.*
 
-## Project Status
+
+## Project Status (July 2025)
+
+| Feature                        | Status      | Notes                                             |
+|--------------------------------|-------------|---------------------------------------------------|
+| User registration/login        | Built/Tested| Implemented and tested                            |
+| API key authentication         | Built/Tested| Implemented and tested                            |
+| Advanced authentication        | Planned     | JWT/OAuth2, rate limiting planned                 |
+
+**Summary:**
 - User registration and login endpoints are implemented and tested.
 - API key authentication is implemented and tested.
 - Advanced authentication (JWT/OAuth2, rate limiting) is planned.

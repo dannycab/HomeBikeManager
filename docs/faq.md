@@ -4,7 +4,15 @@
 **Q: How do I reset my API key?**
 A: Use the /reset-key endpoint (if implemented) or contact an admin
 
-## Project Status
+
+## Project Status (July 2025)
+
+| Feature                        | Status      | Notes                                             |
+|--------------------------------|-------------|---------------------------------------------------|
+| FAQ coverage                   | Built       | Reflects current and planned features              |
+| Planned endpoints (reset-key, uploads) | Pending     | Not yet implemented                               |
+
+**Summary:**
 - FAQ reflects current and planned features.
 - Some endpoints (reset-key, uploads) are planned but not yet implemented.
 

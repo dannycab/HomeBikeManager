@@ -15,9 +15,35 @@
 - [Contributing](contributing.md)
 - [FAQ](faq.md)
 
+
 # HomeBikeManager Documentation
 
 Welcome to the HomeBikeManager documentation. This guide covers everything you need to develop, deploy, and use the HomeBikeManager Flask REST API.
+
+## Project Timeline
+
+- **2025-07**: Project scaffolded, Flask app and models created, Docker and requirements set up.
+- **2025-07**: User registration, login, and API key authentication implemented.
+- **2025-07**: CRUD endpoints for bikes and parts added, with automated pytest-based tests.
+- **2025-07**: Logging and error handling added.
+- **2025-07**: .gitignore, documentation, and VS Code tasks improved.
+- **2025-07**: GitHub issues filed for all major features and improvements.
+- **2025-07**: docs/ folder created with actionable, status-aware documentation for all major features.
+- **2025-07**: Automation script added to sync docs/ to the GitHub Wiki and deploy with MkDocs.
+
+## What Works
+- User registration & login
+- API key authentication
+- CRUD for bikes and parts
+- Automated tests (pytest)
+- Logging (Python logging module)
+- Dockerfile and requirements.txt for deployment
+
+## What Doesn't (Yet)
+- Rides and file uploads (GPX/KML)
+- Calendar events
+- Advanced authentication (JWT, OAuth)
+- Anything fancy
 
 ## System Overview
 <img src="diagrams/homebikemanager_concept.svg" alt="HomeBikeManager Concept Diagram" width="50%" />

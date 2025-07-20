@@ -1,3 +1,13 @@
+# Project Status (July 2025)
+
+| Feature                        | Status      | Notes                                             |
+|--------------------------------|-------------|---------------------------------------------------|
+| sync_docs_to_wiki.py           | Built       | Automates copying docs/ to the Wiki repo           |
+| Other automation scripts       | Planned     | More scripts may be added in the future            |
+
+**Summary:**
+- sync_docs_to_wiki.py is built and automates copying docs/ to the Wiki repo.
+- More automation scripts may be added in the future.
 # Automation Scripts
 
 This project includes helper scripts for common development and maintenance tasks.
