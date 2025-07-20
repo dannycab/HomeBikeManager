@@ -12,12 +12,12 @@ Welcome to the HomeBikeManager documentation. This guide covers everything you n
 - File upload, advanced authentication, and calendar/ride endpoints are pending.
 
 ## Contents
-- [Setup & Installation](setup.md)
-- [API Reference](api.md)
-- [File Uploads](uploads.md)
-- [Authentication](auth.md)
-- [Docker & Deployment](docker.md)
-- [Testing](testing.md)
-- [Logging & Debugging](logging.md)
-- [Contributing](contributing.md)
-- [FAQ](faq.md)
+- [[Setup & Installation]]
+- [[API Reference]]
+- [[File Uploads]]
+- [[Authentication]]
+- [[Docker & Deployment]]
+- [[Testing]]
+- [[Logging & Debugging]]
+- [[Contributing]]
+- [[FAQ]]
