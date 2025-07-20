@@ -1,12 +1,46 @@
+![HomeBikeManager Banner](docs/img/banner.png)
 
 # 🚲 HomeBikeManager
+
+[![Issues](https://img.shields.io/github/issues/dannycab/HomeBikeManager?style=flat-square)](https://github.com/dannycab/HomeBikeManager/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/dannycab/HomeBikeManager?style=flat-square)](https://github.com/dannycab/HomeBikeManager/pulls)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+> 📖 **Full documentation:** See the [`docs/`](docs/) folder and the [GitHub Wiki](https://github.com/dannycab/HomeBikeManager/wiki).
 
 Welcome to HomeBikeManager! This is a humble, work-in-progress Flask REST API for managing your bikes, parts, rides, and maintenance schedules. It's not going to win any design awards, but it gets the job done (eventually). 😅
 
 ## System Overview
 ![HomeBikeManager Concept Diagram](docs/diagrams/homebikemanager_concept.svg)
 
-*Figure: High-level concept diagram of the HomeBikeManager system, showing users, API, database, uploads, and main entities.*
+*Figure 1: High-level concept diagram of the HomeBikeManager system, showing users, API, database, uploads, and main entities. This diagram provides a bird's-eye view of how the main components interact, including user actions, API endpoints, persistent storage, and the relationships between bikes, parts, rides, and calendar events.*
+
+## Architecture & Workflows
+
+### API Endpoints Map
+![API Endpoints Map](docs/diagrams/api_endpoints_map.svg)
+
+*Figure 2: This diagram shows the main REST API endpoints, their relationships, and how the API is organized. Each rectangle represents a resource (e.g., bikes, parts, rides), and arrows indicate management or interaction flows. Use this as a quick reference for endpoint structure and resource responsibilities.*
+
+### Database Schema
+![Database Schema](docs/diagrams/db_schema.svg)
+
+*Figure 3: The database schema diagram illustrates the main models (User, Bike, Part, Ride, CalendarEvent) and their relationships. This helps developers understand how data is structured, how entities are linked, and how to extend the schema for new features.*
+
+### Authentication Flow
+![Authentication Flow](docs/diagrams/auth_flow.svg)
+
+*Figure 4: This diagram details the authentication process, from user registration and login to API key issuance and request validation. It clarifies the security model and the steps required for secure access to the API.*
+
+### File Upload Workflow
+![File Upload Workflow](docs/diagrams/file_upload_flow.svg)
+
+*Figure 5: This workflow shows how file uploads (GPX/KML) are validated, stored, and linked to rides. It covers validation, storage, and the connection between uploaded files and ride records.*
+
+### Deployment Architecture
+![Deployment Architecture](docs/diagrams/deployment_arch.svg)
+
+*Figure 6: The deployment architecture diagram shows how the app, Docker container, database volume, uploads, and client interact. Use this to understand how to deploy, scale, and persist data in production.*
 
 ## Features (Such As They Are)
 
@@ -88,7 +122,9 @@ See [docs/scripts.md](docs/scripts.md) for helper scripts, including `scripts/sy
 Pull requests welcome! Just don't expect us to merge them quickly. 😬
 
 ## License
-MIT. Use at your own risk. Seriously.
+Creative Commons Attribution-NonCommercial 4.0 International ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)).
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 

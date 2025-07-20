@@ -54,4 +54,20 @@ This project is a Flask REST API for managing bikes, parts, rides (with GPX/KML 
 - Keep documentation (README, BUILD-NOTES, docs/) up to date.
 
 ---
+
+## Diagrams & Automation
+- All architecture, workflow, and API diagrams are written in D2 (v0.7.0 syntax: no commas in style blocks, no comments/blank lines before first node).
+- Diagrams are stored in `scripts/diagrams/` and rendered automatically to both `docs/diagrams/` and `wiki/diagrams/` using `scripts/render_diagrams.py`.
+- If a diagram fails to render, check for:
+  - Commas in style blocks (remove them)
+  - Comments or blank lines before the first node (remove them)
+  - Proper closure of all node/style blocks
+- Run `DEBUG=1 python scripts/render_diagrams.py` for verbose logging and troubleshooting.
+- All rendered SVGs are referenced in documentation and the GitHub Wiki for onboarding and architecture clarity.
+
+## Project Logo
+- Place your `logo.png` in the `docs/` folder for documentation and wiki use.
+- For web or API branding, also copy it to `static/` if you serve static assets via Flask.
+- Reference the logo in `README.md`, `docs/Home.md`, and the wiki Home page for consistent branding.
+
 Follow these instructions to ensure HomeBikeManager remains secure, maintainable, and easy to develop. Prioritize simplicity, security, and developer experience in all code suggestions. Reference the docs/ folder and Project Status sections for the most current implementation details.

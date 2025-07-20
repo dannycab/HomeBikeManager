@@ -2,6 +2,11 @@
 
 HomeBikeManager uses username/password authentication and API keys.
 
+## Authentication Flow
+![Authentication Flow](diagrams/auth_flow.svg)
+
+*Figure: This diagram details the authentication process, from user registration and login to API key issuance and request validation. It clarifies the security model and the steps required for secure access to the API.*
+
 ## Project Status
 - User registration and login endpoints are implemented and tested.
 - API key authentication is implemented and tested.
