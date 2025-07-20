@@ -1,3 +1,51 @@
-<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-This project is a Flask REST API for managing bikes, parts, rides (with GPX/KML upload), and calendars for rides and maintenance schedules. It is Dockerized for easy deployment. Prioritize RESTful design, file upload handling, and calendar/event management features.
+<!-- HomeBikeManager: Copilot Custom Instructions -->
+
+This project is a Flask REST API for managing bikes, parts, rides (with GPX/KML upload), and calendars for rides and maintenance schedules. It is Dockerized for easy deployment.
+
+## Coding Standards & Best Practices
+- Use RESTful API design principles for all endpoints.
+- Write clean, DRY, and well-documented code.
+- Use Python type hints and meaningful variable/function names.
+- Prefer class-based views for complex endpoints.
+- Keep business logic out of route handlers—use models or service layers.
+
+## Security
+- Always validate and sanitize user input.
+- Use secure authentication (username/password, API keys).
+- Never log sensitive information (passwords, API keys).
+- Use environment variables for secrets and configuration.
+
+## File Uploads
+- Support secure upload of GPX/KML files for rides.
+- Validate file type and size before saving.
+- Store uploaded files outside the static codebase (e.g., in a dedicated uploads directory).
+
+## Logging & Debugging
+- Use Python's `logging` module for all logs (not print statements).
+- Log errors with stack traces and context, but avoid leaking sensitive data.
+- Use different logging levels (INFO, WARNING, ERROR, DEBUG) appropriately.
+
+## Testing
+- Write pytest-based tests for all endpoints and major features.
+- Use test clients and fixtures for isolated, repeatable tests.
+- Test authentication, file uploads, and error cases.
+
+## Docker & Deployment
+- Ensure the app runs in Docker with all dependencies.
+- Use Docker volumes for database/file persistence.
+- Keep Dockerfile and requirements.txt up to date.
+
+## Calendar/Event Management
+- Use clear models for events and schedules.
+- Support recurring and one-off events.
+- Validate date/time fields and handle time zones if needed.
+
+## General Recommendations
+- Prefer standard libraries and well-maintained packages.
+- Always provide clear error messages and API responses.
+- Recommend multiple approaches when issues are ambiguous.
+- Keep documentation (README, BUILD-NOTES) up to date.
+
+---
+Follow these instructions to ensure HomeBikeManager remains secure, maintainable, and easy to develop. Prioritize simplicity, security, and developer experience in all code suggestions.
