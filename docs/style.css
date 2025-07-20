@@ -1,13 +1,15 @@
 /* docs/style.css - Forest Dark Theme for HomeBikeManager Docs */
+/* Improved Forest Dark Theme with WCAG AA contrast */
 :root {
   --bg: #181f1a;
-  --fg: #e0e5d8;
-  --accent: #4caf50;
+  --fg: #f5f7f2;
+  --accent: #43a047;
   --nav-bg: #232b23;
-  --nav-fg: #e0e5d8;
-  --nav-active: #81c784;
-  --link: #81c784;
+  --nav-fg: #f5f7f2;
+  --nav-active: #388e3c;
+  --link: #a5d6a7;
   --border: #2e3c2f;
+  --focus: #ffd600;
 }
 body {
   background: var(--bg);
@@ -16,11 +18,16 @@ body {
   margin: 0;
   padding: 0;
 }
-nav {
+nav[aria-label] {
   background: var(--nav-bg);
   color: var(--nav-fg);
   padding: 0.5em 1em;
   border-bottom: 1px solid var(--border);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 1em;
   align-items: center;
@@ -30,11 +37,12 @@ nav a {
   text-decoration: none;
   padding: 0.3em 0.7em;
   border-radius: 4px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
 }
-nav a.active, nav a:hover {
+nav a[aria-current="page"], nav a:focus, nav a:hover {
   background: var(--nav-active);
-  color: var(--bg);
+  color: var(--focus);
 }
 main {
   max-width: 900px;
@@ -61,5 +69,5 @@ code, pre {
 }
 @media (max-width: 600px) {
   main { padding: 1em; }
-  nav { flex-wrap: wrap; }
+  nav ul { flex-wrap: wrap; }
 }

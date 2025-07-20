@@ -1,17 +1,21 @@
 
 <link rel="stylesheet" href="style.css">
-<nav>
-  <a href="index.md" class="active">Home</a>
-  <a href="setup.md">Setup</a>
-  <a href="api.md">API</a>
-  <a href="uploads.md">Uploads</a>
-  <a href="auth.md">Auth</a>
-  <a href="docker.md">Docker</a>
-  <a href="testing.md">Testing</a>
-  <a href="logging.md">Logging</a>
-  <a href="contributing.md">Contributing</a>
-  <a href="faq.md">FAQ</a>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="index.md" aria-current="page">Home</a></li>
+    <li><a href="setup.md">Setup</a></li>
+    <li><a href="api.md">API</a></li>
+    <li><a href="uploads.md">Uploads</a></li>
+    <li><a href="auth.md">Auth</a></li>
+    <li><a href="docker.md">Docker</a></li>
+    <li><a href="testing.md">Testing</a></li>
+    <li><a href="logging.md">Logging</a></li>
+    <li><a href="contributing.md">Contributing</a></li>
+    <li><a href="faq.md">FAQ</a></li>
+  </ul>
 </nav>
+<main>
+
 
 ![HomeBikeManager Banner](img/banner.png)
 
@@ -81,3 +85,4 @@ Welcome to the HomeBikeManager documentation. This guide covers everything you n
 - [Logging & Debugging](logging.md)
 - [Contributing](contributing.md)
 - [FAQ](faq.md)
+</main>
