@@ -7,12 +7,12 @@ HomeBikeManager supports secure upload of GPX and KML files for rides.
 
 | Feature                        | Status      | Notes                                             |
 |--------------------------------|-------------|---------------------------------------------------|
-| File upload endpoints          | Pending     | Not yet implemented                               |
+| File upload endpoints          | In Progress | Implementation and testing started July 2025      |
 | Ride model file path support   | Built       | Models support file path storage for rides         |
 | Secure file validation/storage | Pending     | Planned                                           |
 
 **Summary:**
-- File upload endpoints and logic are not yet implemented.
+- Implementation and testing of file upload endpoints is now in progress (July 2025).
 - Models support file path storage for rides.
 - Secure file validation and storage are planned.
 

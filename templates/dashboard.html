@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - HomeBikeManager</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">HomeBikeManager</a>
+        <div class="d-flex">
+            <a href="{{ url_for('frontend.logout') }}" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4">
+    <h2>Your Bikes</h2>
+    {% if bikes %}
+        <ul class="list-group">
+        {% for bike in bikes %}
+            <li class="list-group-item">
+                <strong>{{ bike.name }}</strong> ({{ bike.brand }}, {{ bike.type }})
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No bikes found.</p>
+    {% endif %}
+</div>
+</body>
+</html>

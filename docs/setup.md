@@ -11,11 +11,15 @@
 | Docker-based setup                      | Built/Tested| Dockerfile and deployment tested                           |
 | Environment variable support            | Built       | .env.example provided; secrets/config expansion planned     |
 | Docker volume for uploads/database      | Pending     | Recommended, not yet enforced                              |
+| Docker volume for uploads/database      | Built/Tested| Enforced for persistent uploads and database as of July 2025|
+| Rides, uploads, calendar endpoints     | Built/Tested| All endpoints implemented and tested as of July 2025        |
+
 
 **Summary:**
 - Local and Docker-based setup are supported and tested.
 - Environment variable usage is present but may need expansion for secrets/config.
-- Docker volume for persistent uploads/database is recommended but not yet enforced.
+- Docker volume for persistent uploads/database is now enforced (July 2025).
+- Rides, uploads, and calendar endpoints are fully implemented and tested (July 2025).
 
 ## Local Setup
 1. Clone the repository

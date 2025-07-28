@@ -10,13 +10,13 @@ This section documents the main REST API endpoints for HomeBikeManager.
 |--------------------------------|-------------|---------------------------------------------------|
 | Auth endpoints (register/login)| Built/Tested| Implemented and tested                            |
 | Bike and part endpoints        | Built/Tested| Implemented and tested                            |
-| Rides endpoints                | Pending     | Models exist, endpoints not yet implemented       |
-| Calendar/event endpoints       | Pending     | Models exist, endpoints not yet implemented       |
+| Rides endpoints                | In Progress | Implementation and testing started July 2025      |
+| Calendar/event endpoints       | In Progress | Implementation and testing started July 2025      |
 | Error handling/logging         | Built       | Present, should be reviewed for all endpoints     |
 
 **Summary:**
 - Auth, bike, and part endpoints are implemented and tested.
-- Rides and calendar/event endpoints are not yet implemented (models exist).
+- Implementation and testing of rides and calendar/event endpoints is now in progress (July 2025).
 - Error handling and logging are present but should be reviewed for all endpoints.
 
 ## Authentication

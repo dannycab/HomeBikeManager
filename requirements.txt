@@ -1,3 +1,4 @@
+PyJWT>=2.0
 Flask
 flask-restful
 flask-cors

@@ -1,0 +1,18 @@
+services:
+  homebikemanager:
+    build: .
+    container_name: homebikemanager
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - UPLOAD_FOLDER=/data/uploads
+      - SQLALCHEMY_DATABASE_URI=sqlite:////data/homebikemanager.db
+      - JWT_SECRET=changeme-please-set-in-.env
+    volumes:
+      - uploads:/data/uploads
+      - db:/data
+    restart: unless-stopped
+volumes:
+  uploads:
+  db:

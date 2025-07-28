@@ -10,11 +10,11 @@ A: Use the /reset-key endpoint (if implemented) or contact an admin
 | Feature                        | Status      | Notes                                             |
 |--------------------------------|-------------|---------------------------------------------------|
 | FAQ coverage                   | Built       | Reflects current and planned features              |
-| Planned endpoints (reset-key, uploads) | Pending     | Not yet implemented                               |
+| Planned endpoints (reset-key, uploads, rides, calendar) | In Progress | Implementation and testing started July 2025      |
 
 **Summary:**
 - FAQ reflects current and planned features.
-- Some endpoints (reset-key, uploads) are planned but not yet implemented.
+- Implementation and testing of rides, uploads, and calendar endpoints is now in progress (July 2025).
 
 **Q: Where are uploaded files stored?**
 A: In the uploads directory, outside the static codebase
