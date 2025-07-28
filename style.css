@@ -1,0 +1,73 @@
+/* docs/style.css - Forest Dark Theme for HomeBikeManager Docs */
+/* Improved Forest Dark Theme with WCAG AA contrast */
+:root {
+  --bg: #181f1a;
+  --fg: #f5f7f2;
+  --accent: #43a047;
+  --nav-bg: #232b23;
+  --nav-fg: #f5f7f2;
+  --nav-active: #388e3c;
+  --link: #a5d6a7;
+  --border: #2e3c2f;
+  --focus: #ffd600;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav[aria-label] {
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--border);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+nav a {
+  color: var(--link);
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+nav a[aria-current="page"], nav a:focus, nav a:hover {
+  background: var(--nav-active);
+  color: var(--focus);
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em;
+  background: rgba(24,31,26,0.98);
+  border-radius: 10px;
+  box-shadow: 0 2px 16px #0006;
+}
+h1, h2, h3, h4 {
+  color: var(--accent);
+}
+img, svg {
+  max-width: 100%;
+  border-radius: 6px;
+  background: #232b23;
+  box-shadow: 0 1px 6px #0004;
+}
+code, pre {
+  background: #232b23;
+  color: #b9f6ca;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+@media (max-width: 600px) {
+  main { padding: 1em; }
+  nav ul { flex-wrap: wrap; }
+}
